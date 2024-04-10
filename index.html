@@ -462,5 +462,48 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="model">
+        <button class="model-btn-close" type="button">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/model.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="model-tittle">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="model-form">
+          <label for="model-name" class="model-label">Name</label>
+          <div class="input">
+            <input type="text" class="model-input" id="model-name" />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/model.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label for="model-phone" class="model-label">Phone</label>
+          <div class="input">
+            <input type="tel" class="model-input" id="model-phone" />
+            <svg class="input-icon" width="18" height="24">
+              <use href="./images/model.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label for="model-email" class="model-label">Email</label>
+          <div class="input">
+            <input type="email" class="model-input" id="model-email" />
+            <svg class="input-icon" width="18" height="24">
+              <use href="./images/model.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label for="user-comment" class="model-label">Comment</label>
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            class="model-text"
+          ></textarea>
+
+          <button type="button" class="model-btn-send">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
