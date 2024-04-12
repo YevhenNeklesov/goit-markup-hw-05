@@ -751,8 +751,17 @@ ul {
   fill: #f4f4fd;
 }
 
-.model-accent {
+.model-police {
   display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.model-accent {
   justify-content: center;
   align-items: center;
   fill: transparent;
@@ -765,22 +774,6 @@ ul {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 8px;
-}
-
-.cube-icon {
-}
-
-.model-police {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
-
-.model-police {
 }
 
 .police-link {
