@@ -18,7 +18,7 @@ img {
   display: block;
 }
 
-a {
+a:not(.police-link) {
   text-decoration: none;
   display: block;
 }
@@ -38,6 +38,25 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+.visually-hidden {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*------------------------HEADER--------------------------------*/
@@ -219,25 +238,6 @@ ul {
 
 .advantage {
   background-color: #fff;
-}
-
-.advantage-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .advantage-list {
@@ -620,6 +620,15 @@ ul {
   align-items: center;
 }
 
+.model-btn-close:hover {
+  border: 1px solid #404bbf;
+  background-color: #404bbf;
+}
+
+.model-btn-close:hover .icon-close {
+  fill: #fff;
+}
+
 .icon-close {
   fill: #2e2f42;
 }
@@ -705,30 +714,49 @@ ul {
   margin-bottom: 16px;
 }
 
-.checkbox {
-}
-
-.police-checkbox {
-  display: flex;
-  width: 338px;
-  height: 16px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
+.model-field {
   margin-bottom: 24px;
 }
 
-.accent-police {
+.model-check:checked + .model-police .model-cube {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
-.checkbox-cube {
-  width: 16px;
-  height: 16px;
+.model-police .model-cube {
+  width: 20px;
+  height: 20px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+}
+
+.model-cube {
   margin-right: 8px;
+}
+
+.cube-icon {
+}
+
+.model-police {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.model-police {
+}
+
+.police-link {
+  margin-left: 4px;
 }
 
 .model-btn-send {
@@ -745,6 +773,12 @@ ul {
   text-align: center;
   color: #fff;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-btn-send:hover {
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------------------------------------------------------*/

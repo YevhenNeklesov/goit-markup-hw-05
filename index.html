@@ -511,14 +511,25 @@
             name="user-comment"
             id="user-comment"
             placeholder="Text input"
-            class="model-text"
-          >
-          </textarea>
-
-          <input type="checkbox" name="police" id="police" class="checkbox" />
-          <label for="police" class="police-checkbox"
-            >I accept the terms and conditions of the Privacy Policy</label
-          >
+            class="model-text model-input"
+          ></textarea>
+          <div class="model-field">
+            <input
+              type="checkbox"
+              name="police"
+              id="police"
+              class="model-check visually-hidden"
+              value="true"
+            />
+            <label for="police" class="model-police"
+              ><span class="model-cube"
+                ><svg class="cube-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg
+              ></span>
+              I accept the terms and conditions of the
+              <a href="" class="police-link">Privacy Policy</a>
+            </label>
+          </div>
           <button type="button" class="model-btn-send">Send</button>
         </form>
       </div>
