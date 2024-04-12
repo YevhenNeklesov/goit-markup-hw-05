@@ -645,6 +645,10 @@ ul {
   margin-bottom: 16px;
 }
 
+.form-box {
+  margin-bottom: 8px;
+}
+
 .model-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -680,7 +684,6 @@ ul {
 
 .input {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .input-icon {
