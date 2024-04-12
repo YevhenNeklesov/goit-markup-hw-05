@@ -463,7 +463,13 @@
         <div class="footer-email">
           <p class="form-tittle">Subscribe</p>
           <form class="footer-form">
-            <input type="email" placeholder="E-mail" class="footer-input" />
+            <label for="subscribe" class="subscribe"></label>
+            <input
+              type="email"
+              placeholder="E-mail"
+              id="subscribe"
+              class="footer-input"
+            />
             <button type="button" class="footer-btn">
               Subscribe
               <svg class="footer-btn-icon" width="24" height="24">
@@ -486,27 +492,42 @@
         </p>
         <form class="model-form">
           <div class="form-box">
-            <label for="model-name" class="model-label">Name</label>
+            <label for="user-name " class="model-label">Name</label>
             <div class="input">
-              <input type="text" class="model-input" id="model-name" />
-              <svg class="input-icon" width="18" height="18">
+              <input
+                type="text"
+                name="user-name"
+                class="model-input"
+                id="user-name "
+              />
+              <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
           <div class="form-box">
-            <label for="model-phone" class="model-label">Phone</label>
+            <label for="user-phone" class="model-label">Phone</label>
             <div class="input">
-              <input type="tel" class="model-input" id="model-phone" />
+              <input
+                type="tel"
+                name="user-phone"
+                class="model-input"
+                id="user-phone"
+              />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="form-box">
-            <label for="model-email" class="model-label">Email</label>
+            <label for="user-email" class="model-label">Email</label>
             <div class="input">
-              <input type="email" class="model-input" id="model-email" />
+              <input
+                type="email"
+                name="user-email"
+                class="model-input"
+                id="user-email"
+              />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -524,12 +545,12 @@
           <div class="model-field">
             <input
               type="checkbox"
-              name="police"
-              id="police"
+              name="user-privacy"
+              id="user-privacy"
               class="model-check visually-hidden"
               value="true"
             />
-            <label for="police" class="model-police"
+            <label for="user-privacy" class="model-police"
               ><span class="model-cube"
                 ><svg class="cube-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg

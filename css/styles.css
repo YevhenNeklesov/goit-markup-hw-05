@@ -356,6 +356,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -588,9 +589,11 @@ ul {
 .backdrop {
   width: 100%;
   height: 100%;
-  top: 0;
+
   position: fixed;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model {
@@ -605,10 +608,12 @@ ul {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   padding: 72px 24px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-btn-close {
   position: absolute;
+  display: flex;
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -618,19 +623,27 @@ ul {
   top: 24px;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.model-btn-close:hover {
+.model-btn-close:hover,
+.model-btn-close:focus {
   border: 1px solid #404bbf;
   background-color: #404bbf;
+  border: none;
 }
 
-.model-btn-close:hover .icon-close {
+.model-btn-close:hover .icon-close,
+.model-btn-close:focus .icon-close {
   fill: #fff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-tittle {
@@ -661,6 +674,9 @@ ul {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-input::placeholder {
@@ -692,14 +708,17 @@ ul {
   top: 50%;
   transform: translateY(-50%);
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 
 .form-comment {
@@ -712,12 +731,15 @@ ul {
   width: 360px;
   height: 120px;
   resize: none;
-  padding-left: 16px;
-  padding-top: 8px;
+  padding: 8px 16px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-field {
@@ -731,14 +753,18 @@ ul {
 }
 
 .model-police .model-cube {
-  width: 20px;
-  height: 20px;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-cube {
@@ -763,11 +789,12 @@ ul {
 
 .police-link {
   margin-left: 4px;
+  color: #4d5ae5;
 }
 
 .model-btn-send {
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
