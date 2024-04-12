@@ -752,8 +752,6 @@ ul {
 }
 
 .model-police {
-  display: inline-flex;
-  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -762,6 +760,7 @@ ul {
 }
 
 .model-accent {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   fill: transparent;
@@ -769,7 +768,6 @@ ul {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  display: flex;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
